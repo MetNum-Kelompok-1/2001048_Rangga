@@ -24,6 +24,6 @@ for i in range(n):
 for i in range(n):
     x[i] = a[i][n]/a[i][i]
     
-print('\nSolusi SPL Gauus-Jordan adalah: ')
+print('\nSolusi SPL metode Gauss-Jordan: ')
 for i in range(n):
     print('X%d = %0.2f' %(i,x[i]), '\t')
