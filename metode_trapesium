@@ -1,0 +1,24 @@
+e= 2.71828
+def f(x):
+    pepega = eval(fx)
+    return pepega
+
+# Implementasi algoritma trapesium
+def trapezoidal(a,b,n):
+    h = (b - a) / n
+    integration = f(a)+f(b)
+    for i in range(1,n):
+        k = a + i*h
+        integration = integration+ 2 * f(k)
+    integration = integration * h/2
+    return integration
+    
+# Input value fungsi, batas bawah & atas, jumlah iterasi
+fx = str(input("Masukan nilai persamaan fungsinya : "))
+a = float(input("Masukkan nilai untuk batas bawah: "))
+b = float(input("Masukkan nilai untuk batas atas: "))
+n = int(input("Masukkan banyaknya iterasi: "))
+
+# Menampilkan hasil dan panggil struktur fungsi
+result = trapezoidal(a, b, n)
+print("Nilai integrasi metode trapesium: %0.6f" % (result))
